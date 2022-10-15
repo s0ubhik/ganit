@@ -19,7 +19,6 @@ def collect_iden(buf_strm):
 		else:
 			buf_strm.back()
 			break
-	
 	return iden
 
 def collect_int(buf_strm):
@@ -30,7 +29,6 @@ def collect_int(buf_strm):
 		else:
 			buf_strm.back()
 			break
-	
 	return _int
 
 def lex(buf_strm):
@@ -57,4 +55,3 @@ def lex(buf_strm):
 
 		else:
 			warning("Ignored Illegal Charecter '"+c+"'", Token('', '', pos))
-			pass
