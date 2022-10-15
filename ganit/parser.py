@@ -34,8 +34,6 @@ def parse(tkn_strm):
 
 	tkn_strm.reset()
 
-	tkn_strm.reset()
-
 	while tkn_strm.next():
 		t = tkn_strm.cur()
 		if t.type in ['iden', 'int', 'operation']:
